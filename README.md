@@ -1,10 +1,25 @@
-CSON
-====
+[![apm]](https://atom.io/packages/transpile-cson)
 
-[Atom](http://atom.io/) plugin. Convert JSON to CSON, and vice versa.
+Atom _[CSON]_ Transpiler
+========================
+Freely transpile between _[CSON]_ and JSON in [Atom].
 
-Just select the text to convert and select the convert to CSON/JSON command. In a JSON or CSON file, it converts the whole file.
+[Another] plugin for _[atom-transpile]_.
 
-![Demo](http://i.imgur.com/rmc4awT.gif)
+Install
+-------
+`apm install transpile-cson` or search “cson” under Packages within Atom.
 
-This uses the [CSON](https://www.npmjs.com/package/cson) npm package.
+License
+-------
+[MIT] © [Juan Cazala] et [al]
+
+[MIT]:								LICENSE.md
+[Juan Cazala]:				https://github.com/cazala
+[al]:									https://github.com/cazala/atom-transpile-cson/graphs/contributors
+[atom]:								https://atom.io
+[apm]:                https://img.shields.io/apm/v/transpile-cson.svg?style=flat-square
+
+[atom-transpile]:			https://atom.io/packages/transpile
+[Another]:            https://atom.io/packages/search?q=transpile-
+[CSON]:								https://github.com/bevry/cson#what-is-cson

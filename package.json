@@ -1,23 +1,43 @@
 {
-  "main": "./index.coffee",
-  "name": "cson",
+  "name": "transpile-cson",
   "version": "2.0.1",
-  "description": "Convert JSON to CSON, and vice versa",
+  "description": "Freely transpile between CSON and JSON.",
   "keywords": [
-    "JSON",
-    "CSON",
+    "transpile",
     "convert",
-    "parser",
-    "json2cson",
-    "cson2json"
+    "refactor",
+    "CSON",
+    "JSON"
   ],
-  "repository": "https://github.com/cazala/cson",
+  "homepage": "https://atom.io/packages/transpile-cson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cazala/atom-transpile-cson.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cazala/atom-transpile-cson/issues"
+  },
+  "author": "Juan Cazala",
+  "contributors": [
+    "Daniel Bayley <daniel.bayley@me.com> (https://github.com/danielbayley)"
+  ],
+  "private": true,
   "license": "MIT",
+  "dependencies": {
+    "cson": "^4.1.0"
+  },
+  "scripts": {
+    "preinstall": "apm install transpile"
+  },
   "engines": {
     "atom": "*"
   },
-  "dependencies": {
-    "cson": "~3.0.2"
-  },
-  "scripts": {}
+  "main": "./lib/index",
+  "providedServices": {
+    "transpile": {
+      "versions": {
+        "1.0.0": "activate"
+      }
+    }
+  }
 }
